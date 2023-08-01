@@ -1,0 +1,20 @@
+{
+  "productos": [
+    {
+      "nombreProducto": "cafe",
+      "precio": 300,
+      "categoria": "bebida caliente",
+      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg",
+      "descripcion": "latte art",
+      "id": 1
+    },
+    {
+      "nombreProducto": "te",
+      "precio": 200,
+      "categoria": "bebida caliente",
+      "imagen": "https://images.pexels.com/photos/3020919/pexels-photo-3020919.jpeg",
+      "descripcion": "te en hebras",
+      "id": 2
+    }
+  ]
+}
