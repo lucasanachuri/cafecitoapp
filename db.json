@@ -16,5 +16,13 @@
       "descripcion": "te en hebras",
       "id": 2
     }
+  ],
+  "usuarios": [
+    {
+      "nombreUsuario": "Admin",
+      "email": "admin@gmail.com",
+      "password": "PASSWORD",
+      "id":1
+    }
   ]
 }

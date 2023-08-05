@@ -14,15 +14,15 @@ const Menu = () => {
             <NavLink end to="/" className="nav-link">
               Inicio
             </NavLink>
-            <Nav.Link end to="registro" className="nav-link">
+            <NavLink end to="/registro" className="nav-link">
               Registro
-            </Nav.Link>
-            <Nav.Link end to="administrador" className="nav-link">
+            </NavLink>
+            <NavLink end to="/administrador" className="nav-link">
               Administrador
-            </Nav.Link>
-            <Nav.Link end to="login" className="nav-link">
+            </NavLink>
+            <NavLink end to="/login" className="nav-link">
               Login
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
