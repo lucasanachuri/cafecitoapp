@@ -1,7 +1,15 @@
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 
 const Menu = ({ usuarioActivo, setUsuarioActivo }) => {
+  const navegacion = useNavigate();
+  const logout = () => {
+    //limpiamos el state y el sessionStorage
+    setUsuarioActivo({});
+    sessionStorage.removeItem("usuarioLogueado");
+    //redirecciona a la pag ppal
+    navegacion("/");
+  };
   return (
     <Navbar bg="danger" variant="dark" expand="lg">
       <Container>
@@ -22,7 +30,9 @@ const Menu = ({ usuarioActivo, setUsuarioActivo }) => {
                 <NavLink end to="/administrador" className="nav-link">
                   Administrador
                 </NavLink>
-                <Button variant="dark">Logout</Button>
+                <Button variant="dark" onClick={logout}>
+                  Logout
+                </Button>
               </>
             ) : (
               <NavLink end to="/login" className="nav-link">
